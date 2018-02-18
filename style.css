@@ -1,0 +1,138 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: pink;
+	position: relative;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;
+}
+
+.default {
+	background-color: green;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	background-color: lightblue;
+	display: inline-block;
+}
+
+button {
+	display: block;
+	background: lightgreen;
+	position: relative;
+	z-index: 30;
+}
+
+nav {
+	display: none;
+	background-color: lightgreen;
+}
+
+.show {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 20;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+#about {
+	padding: 150px 50px;
+	background-color: beige;
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#main {
+	background-color: lightyellow;
+}
+#company {
+	background-color: lightblue;
+}
+#contacts {
+	background-color: lightgrey;
+}
+#map {
+	background-color: lightgreen;
+}
+
+#upbutton {
+    background: red;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: auto;
+  }
+
+.hid {
+	display: none;
+}
+
+.show-btn {
+	display: block;
+}
+
+@media (min-width: 768px) {
+	header {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	button {
+		display: none;
+	}
+
+	nav {
+		display: block;
+	}
+
+	li {
+		padding: 0;
+		display: inline-block;
+	}
+
+	a {
+		padding: 10px;
+	}
+
+
+	.show {
+		position: relative;
+	}
+
+	.overflow-hidden {
+		overflow: visible;
+	}
+
+	.default {
+		background-color: transparent;
+	}
+}
+
+
+
+
+
+
